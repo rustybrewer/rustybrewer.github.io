@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages of rustybrewer
+# rustybrewer
 
-You can use the [editor on GitHub](https://github.com/rustybrewer/rustybrewer.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Are you coffee lover? Do you own a single boiler coffee brew machine?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Simple thermocouple You'll find a complete DIY setup here.
 
-### Markdown
+- PID software (Rust)
+  - Prometheus metrics
+  - HTTP Endpoint
+- Control software (Rust)
+  - Mode 0 standby
+  - Mode 1 warm up, keep constact boiler temperature (95° C / 203° F)
+  - Mode 2 brew, use additional heating vs. cold water pump
+  - Mode 3 steam
+- Discord Bot turn and off the brewer when you are far away from the machine (Deno Typescript)
+  - uses Prometheus metrics and HTTP endpoint
+- Incremental agile hardware rework
+  - Max 4h without espresso!
+  - Component list 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rustybrewer/rustybrewer.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
